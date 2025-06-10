@@ -72,14 +72,14 @@ def sampen_gpu(data, m, r):
 
         count_m += np.sum(count_m_chunk_host)
         count_m_plus_1 += np.sum(count_m_plus_1_chunk_host)
-
-    if count_m_plus_1 == 0 and count_m != 0:
-        sampen = np.inf
-    elif count_m == 0:
+    if count_m_plus_1 == 0:
         sampen = np.nan
+    elif count_m == 0:
+        sampen = np.inf
+    elif count_m_plus_1 == count_m:
+        sampen = np.inf
     else:
         sampen = -np.log(count_m_plus_1 / count_m)
-
     return sampen
 
 
