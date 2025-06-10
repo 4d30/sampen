@@ -21,8 +21,12 @@ Sample Entropy is a widely-used statistical measure that quantifies the complexi
 Install dependencies via:
 
 ```bash
-pip install numpy numba
+git clone https://github.com/4d30/sampen.git
+cd sampen
+pip install -e .
 ```
+
+
 
 
 ## Usage
