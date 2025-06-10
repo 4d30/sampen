@@ -18,16 +18,17 @@ Sample Entropy is a widely-used statistical measure that quantifies the complexi
 - Numba
 - CUDA-enabled GPU and NVIDIA drivers
 
-Install dependencies via:
+## Installation
 
+### Install from PyPI
+- `pip install sampen-gpu`
+
+### Install from source
 ```bash
 git clone https://github.com/4d30/sampen.git
 cd sampen
 pip install -e .
 ```
-
-
-
 
 ## Usage
 ```python
@@ -38,7 +39,6 @@ data = np.random.rand(10000)  # your time series data
 m = 2                         # template length
 r = 0.2                       # similarity threshold
 
-entropy = sampen_gpu(data, m, r)
+entropy = sampen(data, m, r)
 print("Sample Entropy:", entropy)
 ```
-
