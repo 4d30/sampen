@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sampen"
+name = "sampen-gpu"
 version = "0.1.0"
 description = "GPU-accelerated Sample Entropy in Python"
 authors = [
