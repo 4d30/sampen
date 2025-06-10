@@ -22,6 +22,7 @@ Install dependencies via:
 
 ```bash
 pip install numpy numba
+```
 
 
 ## Usage
