@@ -31,7 +31,7 @@ pip install -e .
 
 ## Usage
 ```python
-from sampen import sampen_gpu
+from sampen import sampen
 import numpy as np
 
 data = np.random.rand(10000)  # your time series data
